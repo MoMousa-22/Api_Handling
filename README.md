@@ -1,18 +1,26 @@
-# api_handling
 
-A new Flutter project to practice on APIs handling 
-and make it in a good and clear way 
-to be a reference in future projects.
+# Api Handling App 📱
+## Flutter API Handling Practice
 
-## Getting Started
+### This project is a practice Flutter application focused on working with APIs and implementing clean, scalable methods for handling the requests and responses. through error handling, and separation of concerns when interacting with remote data sources.
 
-This project is a starting point for a Flutter application.
+##### Key Highlights:
 
-A few resources to get you started if this is your first Flutter project:
+Organized API layer with base URL and endpoints.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Data fetching using dio, and exceptions handling.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Code separation for maintainability and readability
+
+
+
+
+#### 🖼️ Screenshots
+
+<p float="left">
+  <img src="Api_Handling_Screenshots/Screenshot_1.jpg" width="250"/>
+  <img src="Api_Handling_Screenshots/Screenshot_2.jpg" width="250"/>
+
+</p>
+
+#### Note: This is not a complete application or even contains any real API, but it is a reference for me to use this  structure "API Handling" in other projects.
