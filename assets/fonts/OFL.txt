@@ -1,0 +1,2 @@
+[InternetShortcut]
+URL=https://github.com/HappyTechChannel/happy_tech_mastering_api_with_flutter/blob/7bb71bb74db8739c215699f0b0b197b2f0831167/assets/fonts/OFL.txt
