@@ -1,4 +1,7 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
+import 'package:image_picker/image_picker.dart';
 
 class PickImageWidget extends StatelessWidget {
   const PickImageWidget({
@@ -19,7 +22,13 @@ class PickImageWidget extends StatelessWidget {
               bottom: 5,
               right: 5,
               child: GestureDetector(
-                onTap: () async {},
+                onTap: () async {
+                  File? image = await pickImageFromGallery();
+                  if (image != null) {
+                    // هنا ممكن تتعامل مع الصورة
+                    print('تم اختيار الصورة: ${image.path}');
+                  }
+                },
                 child: Container(
                   height: 50,
                   width: 50,
@@ -40,5 +49,17 @@ class PickImageWidget extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+Future<File?> pickImageFromGallery() async {
+  final ImagePicker picker = ImagePicker();
+  final XFile? pickedFile = await picker.pickImage(source: ImageSource.gallery);
+
+  if (pickedFile != null) {
+    return File(pickedFile.path);
+  } else {
+    print('No image selected.');
+    return null;
   }
 }
